@@ -103,13 +103,18 @@ Optionally, you may download and use a prebuilt version of the program directly 
 #### GNU/Linux installation via apt
 
 1. Install OpenGL (GLUT):
+
    `sudo apt-get install freeglut3-dev`
-2. Install libpng:
+3. Install libpng:
+
    `sudo apt-get install libpng-dev`
-3. Install libjpeg:
+4. Install libjpeg:
+
    `sudo apt-get install libjpeg-dev`
-4. Install CUDA Toolkit:
+5. Install CUDA Toolkit:
+
    Download CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
+   
    For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
 
 ### Contributing
