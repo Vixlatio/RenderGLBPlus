@@ -13,7 +13,7 @@ RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (an
 - Cross-platform, runs on GNU/Linux as well as on Microsoft Windows.
 - Automatic camera view framing.
 - Custom output folder paths.
-- GPU and CPU rendering options, using [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) and the open-source [ZLUDA Toolkit](https://github.com/vosen/ZLUDA).
+- GPU rendering, using [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) and the open-source [ZLUDA Toolkit](https://github.com/vosen/ZLUDA).
 - Random file name generation.
 - Supports NVIDIA GPUs and supposedly AMD GPUs, though untested.
 - Threading.
@@ -22,6 +22,7 @@ RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (an
 - Custom scene backgrounds.
 - Custom camera positioning, overriding automatic camera view framing.
 - Importing multiple GLB files into the scene and rendering them all as one image.
+- CPU rendering.
 
 ### Usage
 
@@ -55,20 +56,20 @@ renderglbplus.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_P
 - **Required:** `-d`, `--directory`: Path to the output folder.
    - **Note:** *Ensure that you have the system user, under which the program will be running, has the correct read/write permissions to the output directory.*
 - **Optional:** `-m`, `--mode`: Rendering mode (GPU or CPU).
-   - **Default:** `CPU` (Recommended).
-   - **Options:** `CPU`, `GPU`.
+   - **Default:** `GPU` (Recommended).
+   - **Options:** `GPU`, `CPU`.
    - **Note:** *The program will fail to render and will output an error if your system does not have a proper GPU.*
 
 ### Examples
 
-Render a GLB file named `model.glb` into a PNG image on a GNU/Linux system using the CPU, where the GLB file is in the same path as the RenderGLB+ program:
+Render a GLB file named `model.glb` into a PNG image on a GNU/Linux system using the GPU, where the GLB file is in the same path as the RenderGLB+ program:
 ```
-./renderglbplus -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
+./renderglbplus -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m GPU
 ```
 
-Render a GLB file named `model.glb` into a PNG image on a Microsoft Windows system using the CPU, where the GLB file is in the same path as the RenderGLB+ program:
+Render a GLB file named `model.glb` into a PNG image on a Microsoft Windows system using the GPU, where the GLB file is in the same path as the RenderGLB+ program:
 ```
-renderglbplus.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
+renderglbplus.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m GPU
 ```
 
 ### Manual complilation
