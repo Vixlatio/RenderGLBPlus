@@ -87,11 +87,11 @@ renderglbplus.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Ren
 3. Compile the source code
      Option 1 - Using gcc to build for GNU/Linux:
      ```
-     gcc -o renderglbplus main.c -lglut -lpng -ljpeg -lm
+     g++ -o renderglbplus main.cpp -lglut -lpng -ljpeg -lm
      ```
      Option 2 - Using gcc to build for Microsoft Windows systems:
      ```
-     gcc -o renderglbplus.exe main.c -lglut32 -lpng -ljpeg -lm
+     g++ -o renderglbplus.exe main.cpp -lglut32 -lpng -ljpeg -lm
      ```
 
 ### Using a prebuilt version
