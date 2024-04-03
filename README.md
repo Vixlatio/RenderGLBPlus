@@ -1,6 +1,6 @@
 ## glb-renderer
 
-glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL (GLUT) and NVIDIA's CUDA Toolkit for rendering and supports various image formats including PNG, JPG, and JPEG.
+glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL (GLUT), NVIDIA's CUDA Toolkit, and ZLUDA for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
 
 ### Features
 
@@ -9,11 +9,12 @@ glb-renderer is a program built in C for rendering 3D objects from GLB files int
 - Simple command-line interface for ease of use.
 - Detailed help command for quick reference.
 - Highly performant.
-- Cross-platform, runs on Unix-based systems, such as GNU/Linux, macOS, as well as on Windows.
+- Cross-platform, runs on GNU/Linux as well as on Microsoft Windows.
 - Automatic camera view framing.
 - Custom output folder paths.
 - GPU or CPU rendering options.
 - Random file name generation.
+- Supports NVIDIA GPUs and supposedly AMD GPUs, though untested.
 
 ### Planned Features
 - Custom scene backgrounds.
@@ -23,7 +24,7 @@ glb-renderer is a program built in C for rendering 3D objects from GLB files int
 
 To render a 3D object from a GLB file, use the following command:
 
-#### Unix-like systems (GNU/Linux, macOS):
+#### Unix-like systems (GNU/Linux):
 
 ```
 ./glb-renderer -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
@@ -31,7 +32,7 @@ To render a 3D object from a GLB file, use the following command:
 
 * [] wrapping indicates that the parameter is not required.
 
-#### Windows systems:
+#### Microsoft Windows systems:
 
 ```
 glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
@@ -57,12 +58,12 @@ glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Pa
 
 ### Examples
 
-Render a GLB file named `model.glb` into a PNG image on a Unix-like system (GNU/Linux, macOS) using the CPU, where the GLB file is in the same path as the glb-renderer program:
+Render a GLB file named `model.glb` into a PNG image on a GNU/Linux system using the CPU, where the GLB file is in the same path as the glb-renderer program:
 ```
 ./glb-renderer -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
 ```
 
-Render a GLB file named `model.glb` into a PNG image on a Windows system using the CPU, where the GLB file is in the same path as the glb-renderer program:
+Render a GLB file named `model.glb` into a PNG image on a Microsoft Windows system using the CPU, where the GLB file is in the same path as the glb-renderer program:
 ```
 glb-renderer.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
 ```
@@ -80,11 +81,11 @@ glb-renderer.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Rend
    ```
 
 3. Compile the source code
-     Option 1 - Using gcc to build for Unix-like systems (GNU/Linux, macOS):
+     Option 1 - Using gcc to build for GNU/Linux:
      ```
      gcc -o glb-renderer main.c -lglut -lpng -ljpeg -lm
      ```
-     Option 2 - Using gcc to build for Windows systems:
+     Option 2 - Using gcc to build for Microsoft Windows systems:
      ```
      gcc -o glb-renderer.exe main.c -lglut32 -lpng -ljpeg -lm
      ```
@@ -100,24 +101,53 @@ Optionally, you may download and use a prebuilt version of the program directly 
 - libpng
 - libjpeg
 
-#### GNU/Linux installation via apt
+#### GNU/Linux installation
 
-1. Install OpenGL (GLUT):
+1. Install OpenGL (GLUT) via apt:
 
    `sudo apt-get install freeglut3-dev`
 
    For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-3. Install libpng:
+3. Install libpng via apt:
 
    `sudo apt-get install libpng-dev`
-4. Install libjpeg:
+4. Install libjpeg via apt:
 
    `sudo apt-get install libjpeg-dev`
-5. Install CUDA Toolkit:
+5. Install GPU rendering prerequisites:
+   Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
 
-   Download CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
+   Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
    
    For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
+
+   Option #2 - Install ZLUDA Toolkit (AMD GPUs):
+
+   Download and install ZLUDA Toolkit from this respository, following the instructions in their README file: [https://github.com/vosen/ZLUDA](https://github.com/vosen/ZLUDA)
+
+#### Microsoft Windows installation
+
+1. Install OpenGL (GLUT):
+
+   Instructions coming soon.
+
+   For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
+3. Install libpng:
+
+   Instructions coming soon.
+4. Install libjpeg:
+
+   Instructions coming soon.
+5. Install GPU rendering prerequisites:
+   Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
+
+   Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
+   
+   For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
+
+   Option #2 - Install ZLUDA Toolkit (AMD GPUs):
+
+   Download and install ZLUDA Toolkit from this respository, following the instructions in their README file: [https://github.com/vosen/ZLUDA](https://github.com/vosen/ZLUDA)
 
 ### Contributing
 
