@@ -16,6 +16,7 @@ RenderGLB+ is a program built in C for rendering 3D objects from GLB files (and 
 - GPU and CPU rendering options, using [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) and the open-source [ZLUDA Toolkit](https://github.com/vosen/ZLUDA).
 - Random file name generation.
 - Supports NVIDIA GPUs and supposedly AMD GPUs, though untested.
+- Threading.
 
 ### Planned Features
 - Custom scene backgrounds.
