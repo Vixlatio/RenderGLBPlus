@@ -45,7 +45,7 @@ glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Pa
 - **Optional:** `-o`, `--output`: Name of the output image file (without the extension).
    - **Note:** If not specified, the program will generate a random string of alphanumeric characters and will use that as the file's name.
 - **Required:** `-f`, `--format`: Desired output file type - this determines the output file's extension.
-   - Options: `PNG`, `JPG`, `JPEG`
+   - **Options:** `PNG`, `JPG`, `JPEG`
 - **Optional:** `-h`, `--help`: Display detailed usage information.
    - **Note:** *Ignored if other command-line parameters are specified.*
 - **Required:** `-d`, `--directory`: Path to the output folder.
