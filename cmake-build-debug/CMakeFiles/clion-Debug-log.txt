@@ -14,10 +14,10 @@ CMake Error at C:/Users/Kniaziev/AppData/Local/Programs/CLion/bin/cmake/win/x64/
 
   It fails with the following output:
 
-    Change Dir: '//wsl.localhost/Ubuntu-22.04/home/alexander/renderglbplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-igf5xf'
+    Change Dir: '//wsl.localhost/Ubuntu-22.04/home/alexander/renderglbplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uoi1q6'
     
-    Run Build Command(s): C:/Users/Kniaziev/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_9b1cd
-    ninja: error: '//wsl.localhost/Ubuntu-22.04/home/alexander/renderglbplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-igf5xf/testCCompiler.c', needed by 'CMakeFiles/cmTC_9b1cd.dir/testCCompiler.c.obj', missing and no known rule to make it
+    Run Build Command(s): C:/Users/Kniaziev/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_0625a
+    ninja: error: '//wsl.localhost/Ubuntu-22.04/home/alexander/renderglbplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uoi1q6/testCCompiler.c', needed by 'CMakeFiles/cmTC_0625a.dir/testCCompiler.c.obj', missing and no known rule to make it
     
     
 

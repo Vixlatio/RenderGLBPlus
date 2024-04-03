@@ -86,7 +86,7 @@ renderglbplus.exe -i model.glb -f test_render -o ./ -t PNG -m gpu
 3. Compile the source code
      Option 1 - Using g++ to build for GNU/Linux:
      ```
-     g++ -o renderglbplus main.cpp stb/stb_image_write.h tinygltf/tiny_gltf.cc -lglut -lGL -lGLU -lpng -ljpeg -lm
+     mkdir build && cd build && cmake .. && make
      ```
      Option 2 - Using g++ to build for Microsoft Windows systems:
      ```
