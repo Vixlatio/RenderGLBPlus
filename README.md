@@ -99,7 +99,7 @@ Optionally, you may download and use a prebuilt version of the program directly 
 - libpng
 - libjpeg
 
-#### GNU/Linux installation through apt
+#### GNU/Linux installation via apt
 
 1. Install OpenGL (GLUT):
    `sudo apt-get install freeglut3-dev`
