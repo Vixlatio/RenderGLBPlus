@@ -1,7 +1,7 @@
-## glb-renderer
+## RenderGLB+
 ### An open-source project by Vixlatio PTY LTD
 
-glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL (GLUT), [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit), and [ZLUDA Toolkit](https://github.com/vosen/ZLUDA) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
+RenderGLB+ is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL (GLUT), [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit), and [ZLUDA Toolkit](https://github.com/vosen/ZLUDA) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
 
 ### Features
 
@@ -28,7 +28,7 @@ To render a 3D object from a GLB file, use the following command:
 #### GNU/Linux:
 
 ```
-./glb-renderer -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
+./renderglbplus -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
 ```
 
 * [] wrapping indicates that the parameter is not required.
@@ -36,7 +36,7 @@ To render a 3D object from a GLB file, use the following command:
 #### Microsoft Windows systems:
 
 ```
-glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
+renderglbplus.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
 ```
 
 * [] wrapping indicates that the parameter is not required.
@@ -59,36 +59,36 @@ glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Pa
 
 ### Examples
 
-Render a GLB file named `model.glb` into a PNG image on a GNU/Linux system using the CPU, where the GLB file is in the same path as the glb-renderer program:
+Render a GLB file named `model.glb` into a PNG image on a GNU/Linux system using the CPU, where the GLB file is in the same path as the RenderGLB+ program:
 ```
-./glb-renderer -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
+./renderglbplus -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
 ```
 
-Render a GLB file named `model.glb` into a PNG image on a Microsoft Windows system using the CPU, where the GLB file is in the same path as the glb-renderer program:
+Render a GLB file named `model.glb` into a PNG image on a Microsoft Windows system using the CPU, where the GLB file is in the same path as the RenderGLB+ program:
 ```
-glb-renderer.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
+renderglbplus.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
 ```
 
 ### Manual complilation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Vixlatio/glb-renderer.git
+   git clone https://github.com/Vixlatio/renderglbplus.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd glb-renderer
+   cd renderglbplus
    ```
 
 3. Compile the source code
      Option 1 - Using gcc to build for GNU/Linux:
      ```
-     gcc -o glb-renderer main.c -lglut -lpng -ljpeg -lm
+     gcc -o renderglbplus main.c -lglut -lpng -ljpeg -lm
      ```
      Option 2 - Using gcc to build for Microsoft Windows systems:
      ```
-     gcc -o glb-renderer.exe main.c -lglut32 -lpng -ljpeg -lm
+     gcc -o renderglbplus.exe main.c -lglut32 -lpng -ljpeg -lm
      ```
 
 ### Using a prebuilt version
