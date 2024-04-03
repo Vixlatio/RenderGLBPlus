@@ -99,7 +99,7 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 ### Requirements
 
-- g++ compiler
+- g++ compiler (Tested with v11.4.0, whilst also using 17 spec)
 - libpng
 - libjpeg
 - libgl-dev
