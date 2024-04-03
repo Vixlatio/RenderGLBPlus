@@ -130,8 +130,6 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
    `brew install freeglut mesa-glu`
 
-2. **Install XQuartz
-
    `brew install --cask xquartz`
    
 #### Microsoft Windows installation
