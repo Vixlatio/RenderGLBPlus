@@ -49,7 +49,7 @@ renderglbplus.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_P
 - **Optional:** `-f`: Name of the output image file (without the extension).
    - **Note:** If not specified, the program will generate a random string of alphanumeric characters and will use that as the file's name.
 - **Required:** `-t`: Desired output file type - this determines the output file's extension.
-   - **Options:** `PNG`, `JPG`, `JPEG`
+   - **Options:** `png`, `jpg`, `jpeg`
 - **Optional:** `-h`, `--help`: Display detailed usage information.
    - **Note:** *Ignored if other command-line parameters are specified.*
 - **Required:** `-o`: Path to the output folder.
