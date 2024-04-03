@@ -3,6 +3,4 @@ project(renderglbplus)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(renderglbplus main.cpp
-        tinygltf/tiny_gltf.h
-        stb/stb_image_write.h)
+add_executable(renderglbplus main.cpp)
