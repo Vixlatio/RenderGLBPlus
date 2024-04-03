@@ -1,11 +1,11 @@
 ## glb-renderer
 
-glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL for rendering and supports various image formats including PNG, JPG, SVG, and JPEG.
+glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL for rendering and supports various image formats including PNG, JPG, and JPEG.
 
 ### Features
 
 - Renders 3D objects from GLB files, rendering with the embedded textures, colors, etc.
-- Supports rendering into multiple image formats including PNG, JPG, SVG, and JPEG.
+- Supports rendering into multiple image formats including PNG, JPG, and JPEG.
 - Simple command-line interface for ease of use.
 - Detailed help command for quick reference.
 - Highly performant.
@@ -42,11 +42,17 @@ glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Pa
 ### Command-line Options
 
 - **Required:** `-i`, `--input`: Path to the GLB file.
-- **Optional:** `-o`, `--output`: Name of the output image file (without the extension). *If not specified, generates a random name.*
-- **Required:** `-f`, `--format`: Desired output file type (PNG, JPG, SVG, or JPEG), this determines the output file's extension.
-- **Optional:** `-h`, `--help`: Display detailed usage information. *Ignored if other command-line parameters are specified.*
+- **Optional:** `-o`, `--output`: Name of the output image file (without the extension).
+   - "Note:" If not specified, the program will generate a random string of alphanumeric characters and will use that as the file's name.
+- **Required:** `-f`, `--format`: Desired output file type - this determines the output file's extension.
+   - Options: `PNG`, `JPG`, `JPEG`
+- **Optional:** `-h`, `--help`: Display detailed usage information.
+   - **Note:** *Ignored if other command-line parameters are specified.*
 - **Required:** `-d`, `--directory`: Path to the output folder.
-- **Optional:** `-m`, `--mode`: Rendering mode (GPU or CPU). *Default = CPU (Recommended).*
+   - **Note:** *Ensure that you have the system user, under which the program will be running, has the correct read/write permissions to the output directory.
+- **Optional:** `-m`, `--mode`: Rendering mode (GPU or CPU).
+   - **Default:** `CPU` (Recommended).
+   - **Options:** `CPU`, `GPU`.
    - **Note:** *The program will fail to render and will output an error if your system does not have a proper GPU.*
 
 ### Examples
@@ -92,6 +98,15 @@ Optionally, you may download and use a prebuilt version of the program directly 
 - OpenGL (GLUT)
 - libpng
 - libjpeg
+
+#### GNU/Linux installation through apt
+
+1. Install OpenGL (GLUT):
+   `sudo apt-get install freeglut3-dev`
+2. Install libpng
+   `sudo apt-get install libpng-dev`
+3. Install libjpeg
+   `sudo apt-get install libjpeg-dev`
 
 ### Contributing
 
