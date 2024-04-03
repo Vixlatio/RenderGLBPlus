@@ -71,7 +71,7 @@ std::string generate_unique_output_file_name(const std::string &output_folder_pa
 }
 
 // Calculate the bounding box of the scene
-void calculateBoundingBox(const tinygltf::Model &model, float &minX, float &minY, float &minZ, float &maxX, float &maxY,
+void calculate_bounding_box(const tinygltf::Model &model, float &minX, float &minY, float &minZ, float &maxX, float &maxY,
                           float &maxZ) {
     minX = minY = minZ = std::numeric_limits<float>::max();
     maxX = maxY = maxZ = std::numeric_limits<float>::min();
@@ -100,7 +100,7 @@ void calculateBoundingBox(const tinygltf::Model &model, float &minX, float &minY
 }
 
 // Set up the camera based on the bounding box
-void setupCamera(float minX, float minY, float minZ, float maxX, float maxY, float maxZ) {
+void set_up_camera(float minX, float minY, float minZ, float maxX, float maxY, float maxZ) {
     // Calculate center of the bounding box
     float centerX = (minX + maxX) / 2.0f;
     float centerY = (minY + maxY) / 2.0f;
@@ -150,8 +150,8 @@ void render_glb_with_opengl_gpu(const char *glb_file_path, const char *output_fo
 
     // Set up the camera
     float minX, minY, minZ, maxX, maxY, maxZ;
-    calculateBoundingBox(model, minX, minY, minZ, maxX, maxY, maxZ);
-    setupCamera(minX, minY, minZ, maxX, maxY, maxZ);
+    calculate_bounding_box(model, minX, minY, minZ, maxX, maxY, maxZ);
+    set_up_camera(minX, minY, minZ, maxX, maxY, maxZ);
 
     // Set up lighting
     glEnable(GL_LIGHTING);
