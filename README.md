@@ -115,6 +115,7 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
    `sudo apt-get install libjpeg-dev`
 4. **Install GPU rendering prerequisites:**
+
    Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
 
    Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
@@ -139,6 +140,7 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
    Instructions coming soon.
 4. **Install GPU rendering prerequisites:**
+
    Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
 
    Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
