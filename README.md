@@ -45,30 +45,30 @@ renderglbplus.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_P
 
 ### Command-line Options
 
-- **Required:** `-i`, `--input`: Path to the GLB file.
-- **Optional:** `-o`, `--output`: Name of the output image file (without the extension).
+- **Required:** `-i`: Path to the GLB file.
+- **Optional:** `-f`: Name of the output image file (without the extension).
    - **Note:** If not specified, the program will generate a random string of alphanumeric characters and will use that as the file's name.
-- **Required:** `-f`, `--format`: Desired output file type - this determines the output file's extension.
+- **Required:** `-t`: Desired output file type - this determines the output file's extension.
    - **Options:** `PNG`, `JPG`, `JPEG`
 - **Optional:** `-h`, `--help`: Display detailed usage information.
    - **Note:** *Ignored if other command-line parameters are specified.*
-- **Required:** `-d`, `--directory`: Path to the output folder.
+- **Required:** `-o`: Path to the output folder.
    - **Note:** *Ensure that you have the system user, under which the program will be running, has the correct read/write permissions to the output directory.*
-- **Optional:** `-m`, `--mode`: Rendering mode (GPU or CPU).
-   - **Default:** `GPU` (Recommended).
-   - **Options:** `GPU`, `CPU`.
-   - **Note:** *The program will fail to render and will output an error if your system does not have a proper GPU.*
+- **Optional:** `-m`: Rendering mode (GPU or CPU).
+   - **Default:** `gpu` (Recommended).
+   - **Options:** `gpu`, `cpu`.
+   - **Note:** *The program will fail to render in GPU mode and will output an error if your system does not have a proper GPU.*
 
 ### Examples
 
 Render a GLB file named `model.glb` into a PNG image on a GNU/Linux system using the GPU, where the GLB file is in the same path as the RenderGLB+ program:
 ```
-./renderglbplus -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m GPU
+./renderglbplus -i model.glb -f test_render -o ./ -t PNG -m gpu
 ```
 
 Render a GLB file named `model.glb` into a PNG image on a Microsoft Windows system using the GPU, where the GLB file is in the same path as the RenderGLB+ program:
 ```
-renderglbplus.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m GPU
+renderglbplus.exe -i model.glb -f test_render -o ./ -t PNG -m gpu
 ```
 
 ### Manual complilation
@@ -86,11 +86,11 @@ renderglbplus.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Ren
 3. Compile the source code
      Option 1 - Using g++ to build for GNU/Linux:
      ```
-     g++ -o renderglbplus main.cpp -lglut -lpng -ljpeg -lm
+     g++ -o renderglbplus main.cpp stb/stb_image_write.h tinygltf/tiny_gltf.cc -lglut -lGL -lGLU -lpng -ljpeg -lm
      ```
      Option 2 - Using g++ to build for Microsoft Windows systems:
      ```
-     g++ -o renderglbplus.exe main.cpp -lglut32 -lpng -ljpeg -lm
+     g++ -o renderglbplus.exe main.cpp stb/stb_image_write.h tinygltf/tiny_gltf.cc -lglut -lGL -lGLU -lpng -ljpeg -lm
      ```
 
 ### Using a prebuilt version
@@ -99,38 +99,25 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 ### Requirements
 
-- OpenGL (GLUT)
-- CUDA Toolkit
 - libpng
 - libjpeg
+- libgl-dev
+- libglu1-mesa-dev
+- libgl1-mesa-dev
+- libglfw3-dev
+- freeglut3-dev (Linux) __OR__ OpenGL (Windows)
 
 #### GNU/Linux installation
 
-1. **Install OpenGL (GLUT) via apt:**
+1. **Install prerequisites via apt:**
 
-   `sudo apt-get install freeglut3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libgl-dev`
+   `sudo apt-get install freeglut3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libgl-dev libpng-dev libjpeg-dev`
 
    For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-2. **Install libpng via apt:**
-
-   `sudo apt-get install libpng-dev`
-3. **Install libjpeg via apt:**
-
-   `sudo apt-get install libjpeg-dev`
 
 #### Microsoft Windows installation
 
-1. **Install OpenGL (GLUT):**
-
-   Instructions coming soon.
-
-   For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-2. **Install libpng:**
-
-   Instructions coming soon.
-3. **Install libjpeg:**
-
-   Instructions coming soon.
+Instructions coming soon.
 
 ### Contributing
 
