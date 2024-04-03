@@ -108,6 +108,18 @@ Optionally, you may download and use a prebuilt version of the program directly 
 - libglfw3-dev
 - freeglut3-dev (Linux) __OR__ OpenGL (Windows)
 
+### Prerequisites
+
+- g++ compiler (v11.4.0)
+- cmake (v3.29.0)
+- libpng
+- libjpeg
+- libgl-dev
+- libglu1-mesa-dev
+- libgl1-mesa-dev
+- libglfw3-dev
+- freeglut3-dev (Linux) __OR__ OpenGL (Windows)
+
 #### GNU/Linux installation
 
 1. **Install prerequisites via apt:**
