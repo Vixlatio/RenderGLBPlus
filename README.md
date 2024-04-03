@@ -1,7 +1,7 @@
 ## RenderGLB+ (Experimental)
 ### An open-source project by Vixlatio PTY LTD
 
-RenderGLB+ is a program built in C for rendering 3D objects from GLB files (and other file types soon!) into stunning image renders. This tool leverages OpenGL (GLUT), [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit), and [ZLUDA Toolkit](https://github.com/vosen/ZLUDA) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
+RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (and other file types soon!) into stunning image renders. This tool leverages OpenGL (GLUT), [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit), and [ZLUDA Toolkit](https://github.com/vosen/ZLUDA) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
 
 ### Features
 
