@@ -103,18 +103,18 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 #### GNU/Linux installation
 
-1. Install OpenGL (GLUT) via apt:
+1. **Install OpenGL (GLUT) via apt:**
 
    `sudo apt-get install freeglut3-dev`
 
    For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-3. Install libpng via apt:
+2. **Install libpng via apt:**
 
    `sudo apt-get install libpng-dev`
-4. Install libjpeg via apt:
+3. **Install libjpeg via apt:**
 
    `sudo apt-get install libjpeg-dev`
-5. Install GPU rendering prerequisites:
+4. **Install GPU rendering prerequisites:**
    Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
 
    Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
@@ -127,18 +127,18 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 #### Microsoft Windows installation
 
-1. Install OpenGL (GLUT):
+1. **Install OpenGL (GLUT):**
 
    Instructions coming soon.
 
    For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-3. Install libpng:
+2. **Install libpng:**
 
    Instructions coming soon.
-4. Install libjpeg:
+3. **Install libjpeg:**
 
    Instructions coming soon.
-5. Install GPU rendering prerequisites:
+4. **Install GPU rendering prerequisites:**
    Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
 
    Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
