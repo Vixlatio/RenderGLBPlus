@@ -26,7 +26,7 @@ To render a 3D object from a GLB file, use the following command:
 #### Unix-like systems (GNU/Linux, macOS):
 
 ```
-./glb-renderer -i <GLB_File_Path> -o <Output_File_Name> -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
+./glb-renderer -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
 ```
 
 * [] wrapping indicates that the parameter is not required.
@@ -34,7 +34,7 @@ To render a 3D object from a GLB file, use the following command:
 #### Windows systems:
 
 ```
-glb-render.exe -i <GLB_File_Path> -o <Output_File_Name> -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
+glb-render.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
 ```
 
 * [] wrapping indicates that the parameter is not required.
