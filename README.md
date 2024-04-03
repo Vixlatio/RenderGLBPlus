@@ -84,6 +84,7 @@ renderglbplus.exe -i model.glb -f test_render -o ./ -t PNG -m gpu
    ```
 
 3. Compile the source code
+
      Option 1 - Using g++ to build for GNU/Linux:
      ```
      mkdir build && cd build && cmake .. && make
