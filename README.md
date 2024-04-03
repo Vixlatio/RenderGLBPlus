@@ -1,7 +1,7 @@
 ## RenderGLB+ (NOT READY FOR USE, WILL NOT WORK AS INTENDED)
 ### An open-source project by Vixlatio PTY LTD
 
-RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (and other file types soon!) into stunning image renders. This tool leverages OpenGL (GLUT) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
+RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (and other file types soon!) into stunning image renders. This tool leverages OpenGL (GLUT) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, GNU/LINUX, macOS, and Microsoft Windows.
 
 ### Features
 
@@ -10,11 +10,11 @@ RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (an
 - Simple command-line interface for ease of use.
 - Detailed help command for quick reference.
 - Highly performant.
-- Cross-platform, runs on GNU/Linux as well as on Microsoft Windows.
+- Cross-platform, runs on GNU/Linux, macOS, and Microsoft Windows.
 - Automatic camera view framing.
 - Custom output folder paths.
 - Random file name generation.
-- NVIDIA GPU and AMD GPU support.
+- NVIDIA GPU and AMD GPU support as well as Apple Silicon (With Rosetta 2).
 - Threading.
 
 ### Planned Features
@@ -27,10 +27,10 @@ RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (an
 
 To render a 3D object from a GLB file, use the following command:
 
-#### GNU/Linux:
+#### GNU/Linux and macOS:
 
 ```
-./renderglbplus -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
+./renderglbplus -i <GLB_File_Path> [-o <Output_File_Name>] -o <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
 ```
 
 * [] wrapping indicates that the parameter is not required.
@@ -38,7 +38,7 @@ To render a 3D object from a GLB file, use the following command:
 #### Microsoft Windows systems:
 
 ```
-renderglbplus.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
+renderglbplus.exe -i <GLB_File_Path> [-o <Output_File_Name>] -o <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
 ```
 
 * [] wrapping indicates that the parameter is not required.
@@ -85,7 +85,7 @@ renderglbplus.exe -i model.glb -f test_render -o ./ -t PNG -m gpu
 
 3. Compile the source code
 
-     Option 1 - Using g++ to build for GNU/Linux:
+     Option 1 - Using g++ to build for GNU/Linux and macOS:
      ```
      mkdir build && cd build && cmake .. && make
      ```
@@ -102,7 +102,7 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 - x86_64 processor
 - x11 (Wayland is not supported)
-- GNU/Linux Microsoft Windows
+- GNU/Linux, macOS, or Microsoft Windows
 
 ### Prerequisites
 
@@ -124,15 +124,19 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
    For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
 
-#### Microsoft Windows installation
-
-Instructions coming soon.
-
 #### macOS installation
 
 1. **Install prerequisites via brew:**
 
    `brew install freeglut mesa-glu`
+
+2. **Install XQuartz
+
+   `brew install --cask xquartz`
+   
+#### Microsoft Windows installation
+
+Instructions coming soon.
 
 ### Contributing
 
