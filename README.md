@@ -127,6 +127,12 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 Instructions coming soon.
 
+#### macOS installation
+
+1. **Install prerequisites via brew:**
+
+   `brew install freeglut mesa-glu`
+
 ### Contributing
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
