@@ -101,7 +101,8 @@ Optionally, you may download and use a prebuilt version of the program directly 
 ### Requirements
 
 - x86_64 processor
-- GNU/Linux or Microsoft Windows
+- x11 (Wayland is not supported)
+- GNU/Linux Microsoft Windows
 
 ### Prerequisites
 
