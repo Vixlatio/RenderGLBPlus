@@ -109,7 +109,7 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 1. **Install OpenGL (GLUT) via apt:**
 
-   `sudo apt-get install freeglut3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev`
+   `sudo apt-get install freeglut3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libgl-dev`
 
    For more information about OpenGL (GLUT), visit their website: [https://www.opengl.org/resources/libraries/glut/glut_downloads.php](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
 2. **Install libpng via apt:**
