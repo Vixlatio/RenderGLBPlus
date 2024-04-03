@@ -49,7 +49,7 @@ glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Pa
 - **Optional:** `-h`, `--help`: Display detailed usage information.
    - **Note:** *Ignored if other command-line parameters are specified.*
 - **Required:** `-d`, `--directory`: Path to the output folder.
-   - **Note:** *Ensure that you have the system user, under which the program will be running, has the correct read/write permissions to the output directory.
+   - **Note:** *Ensure that you have the system user, under which the program will be running, has the correct read/write permissions to the output directory.*
 - **Optional:** `-m`, `--mode`: Rendering mode (GPU or CPU).
    - **Default:** `CPU` (Recommended).
    - **Options:** `CPU`, `GPU`.
