@@ -74,7 +74,7 @@ glb-renderer.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Rend
    ```
 
 3. Compile the source code
-     Option 1 - Using gcc to build for Unix-like systems (Linux, macOS):
+     Option 1 - Using gcc to build for Unix-like systems (GNU/Linux, macOS):
      ```
      gcc -o glb-renderer main.c -lglut -lpng -ljpeg -lm
      ```
