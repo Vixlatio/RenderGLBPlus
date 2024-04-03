@@ -116,13 +116,13 @@ Optionally, you may download and use a prebuilt version of the program directly 
    `sudo apt-get install libjpeg-dev`
 4. **Install GPU rendering prerequisites:**
 
-   Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
+   **Option #1 - Install CUDA Toolkit (NVIDIA GPUs):**
 
    Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
    
    For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
 
-   Option #2 - Install ZLUDA Toolkit (AMD GPUs):
+   **Option #2 - Install ZLUDA Toolkit (AMD GPUs):**
 
    Download and install ZLUDA Toolkit from this respository, following the instructions in their README file: [https://github.com/vosen/ZLUDA](https://github.com/vosen/ZLUDA)
 
@@ -141,13 +141,13 @@ Optionally, you may download and use a prebuilt version of the program directly 
    Instructions coming soon.
 4. **Install GPU rendering prerequisites:**
 
-   Option #1 - Install CUDA Toolkit (NVIDIA GPUs):
+   **Option #1 - Install CUDA Toolkit (NVIDIA GPUs):**
 
    Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
    
    For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
 
-   Option #2 - Install ZLUDA Toolkit (AMD GPUs):
+   **Option #2 - Install ZLUDA Toolkit (AMD GPUs):**
 
    Download and install ZLUDA Toolkit from this respository, following the instructions in their README file: [https://github.com/vosen/ZLUDA](https://github.com/vosen/ZLUDA)
 
