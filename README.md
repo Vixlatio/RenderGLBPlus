@@ -99,14 +99,8 @@ Optionally, you may download and use a prebuilt version of the program directly 
 
 ### Requirements
 
-- g++ compiler (Tested with v11.4.0, whilst also using 17 spec)
-- libpng
-- libjpeg
-- libgl-dev
-- libglu1-mesa-dev
-- libgl1-mesa-dev
-- libglfw3-dev
-- freeglut3-dev (Linux) __OR__ OpenGL (Windows)
+- x86_64 processor
+- GNU/Linux or Microsoft Windows
 
 ### Prerequisites
 
