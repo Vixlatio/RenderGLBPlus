@@ -51,12 +51,12 @@ glb-renderer.exe -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Pa
 
 ### Examples
 
-Render a GLB file named `model.glb` into a PNG image on a Unix-like system (GNU/Linux, macOS) using the CPU:
+Render a GLB file named `model.glb` into a PNG image on a Unix-like system (GNU/Linux, macOS) using the CPU, where the GLB file is in the same path as the glb-renderer program:
 ```
 ./glb-renderer -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
 ```
 
-Render a GLB file named `model.glb` into a PNG image on a Windows system using the CPU:
+Render a GLB file named `model.glb` into a PNG image on a Windows system using the CPU, where the GLB file is in the same path as the glb-renderer program:
 ```
 glb-renderer.exe -i model.glb -o test_render -d C:\Users\Username\Documents\Renders -f PNG -m CPU
 ```
