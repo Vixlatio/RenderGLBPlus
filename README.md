@@ -1,7 +1,7 @@
 ## RenderGLB+ (Experimental)
 ### An open-source project by Vixlatio PTY LTD
 
-RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (and other file types soon!) into stunning image renders. This tool leverages OpenGL (GLUT), [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit), and [ZLUDA Toolkit](https://github.com/vosen/ZLUDA) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
+RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (and other file types soon!) into stunning image renders. This tool leverages OpenGL (GLUT) for rendering and supports various image formats including PNG, JPG, and JPEG. This program supports, both, GNU/LINUX and Microsoft Windows.
 
 ### Features
 
@@ -13,9 +13,8 @@ RenderGLB+ is a program built in C++ for rendering 3D objects from GLB files (an
 - Cross-platform, runs on GNU/Linux as well as on Microsoft Windows.
 - Automatic camera view framing.
 - Custom output folder paths.
-- GPU rendering, using [NVIDIA's CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) and the open-source [ZLUDA Toolkit](https://github.com/vosen/ZLUDA).
 - Random file name generation.
-- Supports NVIDIA GPUs and supposedly AMD GPUs, though untested.
+- NVIDIA GPU and AMD GPU support.
 - Threading.
 
 ### Planned Features
@@ -118,17 +117,6 @@ Optionally, you may download and use a prebuilt version of the program directly 
 3. **Install libjpeg via apt:**
 
    `sudo apt-get install libjpeg-dev`
-4. **Install GPU rendering prerequisites:**
-
-   **Option #1 - Install CUDA Toolkit (NVIDIA GPUs):**
-
-   Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
-   
-   For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
-
-   **Option #2 - Install ZLUDA Toolkit (AMD GPUs):**
-
-   Download and install ZLUDA Toolkit from this respository, following the instructions in their README file: [https://github.com/vosen/ZLUDA](https://github.com/vosen/ZLUDA)
 
 #### Microsoft Windows installation
 
@@ -143,17 +131,6 @@ Optionally, you may download and use a prebuilt version of the program directly 
 3. **Install libjpeg:**
 
    Instructions coming soon.
-4. **Install GPU rendering prerequisites:**
-
-   **Option #1 - Install CUDA Toolkit (NVIDIA GPUs):**
-
-   Download and install CUDA Toolkit from NVIDIA's website: [https://developer.nvidia.com/cuda-downloads?target_os=Linux](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
-   
-   For more information about NVIDIA's CUDA Toolkit, visit their website: [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
-
-   **Option #2 - Install ZLUDA Toolkit (AMD GPUs):**
-
-   Download and install ZLUDA Toolkit from this respository, following the instructions in their README file: [https://github.com/vosen/ZLUDA](https://github.com/vosen/ZLUDA)
 
 ### Contributing
 
