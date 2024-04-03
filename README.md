@@ -1,6 +1,6 @@
 ## glb-renderer
 
-glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL (GLUT) for rendering and supports various image formats including PNG, JPG, and JPEG.
+glb-renderer is a program built in C for rendering 3D objects from GLB files into stunning image renders. This tool leverages OpenGL (GLUT) and NVIDIA's CUDA Toolkit for rendering and supports various image formats including PNG, JPG, and JPEG.
 
 ### Features
 
