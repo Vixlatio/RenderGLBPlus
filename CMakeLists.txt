@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.27)
+project(renderglbplus)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(renderglbplus main.cpp
+        tiny_gltf.h
+        stb_image_write.h)
