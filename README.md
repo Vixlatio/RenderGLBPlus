@@ -25,7 +25,7 @@ glb-renderer is a program built in C for rendering 3D objects from GLB files int
 
 To render a 3D object from a GLB file, use the following command:
 
-#### Unix-like systems (GNU/Linux):
+#### GNU/Linux:
 
 ```
 ./glb-renderer -i <GLB_File_Path> [-o <Output_File_Name>] -d <Output_Folder_Path> -f <File_Type> [-m <Render_Mode>]
