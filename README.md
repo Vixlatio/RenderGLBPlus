@@ -20,6 +20,7 @@ RenderGLB+ is a program built in C for rendering 3D objects from GLB files into 
 ### Planned Features
 - Custom scene backgrounds.
 - Custom camera positioning, overriding automatic camera view framing.
+- Importing multiple GLB files into the scene and rendering them all as one image.
 
 ### Usage
 
